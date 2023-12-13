@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A layout example that shows off a responsive product landing page.">
+        <title>Devoir finale </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="/css/pure/grids-responsive-min.css"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@2.1.0/build/grids-responsive-min.css">
+    
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link rel="stylesheet" href=" style_partie_3_page_d-accueil.css">
+    </head><body>
+
+        <div class="header">
+            <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+                <img src="logo UOF 1.png" alt="
+                         "  class="img-logo" srcset="">
+                         <img src="logo 1.png" alt="a href="
+                          class="img-logo" srcset="">
+                         
+                        </div>
+                    </div>
+                    
+                            
+                    <style>
+                        /* Style pour le conteneur du diaporama */
+                        #slideshow-container {
+                            max-width: 1000px;
+                            position: relative;
+                            margin: auto;
+                        }
+                
+                        /* Style pour chaque image du diaporama */
+                        .mySlides {
+                            display: none;
+                            width: 100%;
+                            height: auto;
+                        }
+                
+                        /* Style pour les contrôles précédents/suivants */
+                        .prev, .next {
+                            cursor: pointer;
+                            position: absolute;
+                            top: 50%;
+                            width: auto;
+                            padding: 16px;
+                            margin-top: -22px;
+                            color: white;
+                            font-weight: bold;
+                            font-size: 18px;
+                            transition: 0.6s ease;
+                            border-radius: 0 3px 3px 0;
+                        }
+                
+                        .next {
+                            right: 0;
+                            border-radius: 3px 0 0 3px;
+                        }
+                
+                        /* Style pour les points indicateurs */
+                        .dot {
+                            height: 15px;
+                            width: 15px;
+                            margin: 0 2px;
+                            background-color: #bbb;
+                            border-radius: 50%;
+                            display: inline-block;
+                            transition: background-color 0.6s ease;
+                        }
+                
+                        .active {
+                            background-color: #121212;
+                        }
+                    </style>
+                </head>
+                <body>
+                
+                <div id="slideshow-container">
+                    <!-- Images du diaporama -->
+                    <div class="mySlides">
+                        <img src="image 1 joe biden.png" >
+                    </div>
+                
+                    <div class="mySlides">
+                        <img src="Image de JOE BIDEN PRES DE HAMAS_.png" >
+                    </div>
+                
+                    <div class="mySlides">
+                        <img src="barack obama.png" >
+                    </div>
+                
+                    <!-- Contrôles précédents/suivants -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                
+                <!-- Points indicateurs -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                
+                    // Fonction pour passer à la diapositive suivante/précédente
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+                
+                    // Fonction pour afficher une diapositive spécifique
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+                
+                    // Fonction principale pour afficher les diapositives
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) {
+                            slideIndex = 1;
+                        }
+                        if (n < 1) {
+                            slideIndex = slides.length;
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                    }
+                </script>
+                <div id="header">
+                    <!-- CI-DESSOUS, OBSERVEZ L'AJOUT DE LA CLASSE "GRADIENT-TITRE" À LA
+                          BALISE <H1>: -->
+                      <!-- CETTE CLASSE SE TROUVE DÉCRITE DANS LE FICHIER STYLE.CSS, ET
+                            ELLE PERMET DE DONNER UN EFFET DE DÉGRADÉ AU TITRE. -->
+                     <center> <h1 strong class="gradient-titre" > L'EXPANSION DES MEDIAS SOCIAUX ET LEURS IMPACTS SUR LA DIFFUSION DE FAUSSES INFORMATIONS </h1> </center>
+                    <p style="text-align: center;">
+                        Selon un article publié par La presse, on comptait en 2021 près de 4 milliards d’utilisateurs connectés sur les réseaux sociaux ; soit la moitié de la population mondiale. En 2022, c’est plus de 4,700 milliards de personnes qui utilisent les réseaux sociaux. 
+                        En 2023 on compte une augmentation de 0,7 pourcent. Chaque année on est de plus en plus nombreux à créer un compte de médias sociaux ce qui entraine une prolifération très rapide de la désinformation. C’est dans cette même logique qu’il a été attesté dans un 
+                        article publié par l’Unesco en 2017 intitulé Fake news : ce qu’en pensent les journalistes, que les médias sociaux sont le lieu par excellence où se propage très rapidement des fausses informations selon un article publié par l’Unesco en 2017 intitulé Fake news : ce qu’en pensent les journalistes.
+                    </P>
+                        <p style="text-align: center;">
+                            Grâce aux médias sociaux, plusieurs personnes répandent des informations, images et vidéos en masse sans même prendre la peine de vérifier leur provenance et fiabilité. Ces informations fausses deviennent rapidement virales sur la toile.
+                             Idée que soutien un article publié par le devoir intitulé Faussetés et vérités sur les réseaux sociaux, « Le modèle d’affaires de Facebook n’est pas celui des médias d’informations ; il est fondé sur la valorisation de l’attention de l’internaute. Ce que vendent les réseaux sociaux, c’est la valeur obtenue par 
+                            cette capacité de déterminer, de seconde en seconde, ce qui retient l’attention, ce qui « attrape » le regard de l’internaute ». En dépit du fait que plusieurs fausses informations circulent sur ces réseaux, il n’en demeure pas moins qu’ils existent des comptes fiables où l’information de qualité est acquise.
+                        </P>
+                        <p style="text-align: center;">
+                            Désormais plusieurs chaines d’informations reconnus et partis politiques possèdent des comptes de médias sociaux qui publient à temps réel des informations justes. 
+                            Ils seraient donc judicieux de se connecter à ses comptes là pour être certain de la fiabilité de nos informations. C’est d’ailleurs dans ce sens que « le théoricien politique Benjamin Barber a avancé l’hypothèse selon laquelle les nouvelles technologies de l’information avaient 
+                            le potentiel de renforcer la démocratie en augmentant l’accès public à l’information, 
+                            ce qui contribuerait à accroître la conscience civique et à favoriser le dialogue et les délibérations participatives sur de grandes distances » (Patten, S., page 21).
+                        </P>
+                        <p style="text-align: center;">
+                            En somme, nous pouvons conclure en disant que les médias sociaux sont le lieu où nous trouvons rapidement les informations. Mais, il est important de prendre 
+                            en compte que ces informations peuvent être erronées et les pages fiables peuvent être piratées. D’où cela revient à chaque internaute d’être vigilant, 
+                            de vérifier l’information à plusieurs reprises et de privilégier les comptes de médias reconnus.
+                        </P>
+                    <hr>
+
+
+                    <h1 align="center" > Bibliographie </h1>
+                <ol><li>
+                    Patten, S. (2013). Évaluation du potentiel des nouveaux médias sociaux. Revue parlementaire.
+                <a  href=" https://www.canlii.org/fr/doctrine/doc/2013CanLIIDocs378#!fragment//BQCwhgziBcwMYgK4DsDWszIQewE4BUBTADwBdoByCgSgBpltTCIBFRQ3AT0otokLC4EbDtyp8BQkAGU8pAELcASgFEAMioBqAQQByAYRW1SYAEbRS2ONWpA">
+                    Évaluation du potentiel des nouveaux médias sociaux. Revue parlementaire. </a>
+                </li>
+                <li>Agence France Presse. (27 janvier 2021). Plus de 4 milliards d’utilisateurs des réseaux sociaux dans le monde
+                    <a  href="https://www.lapresse.ca/affaires/techno/2021-01-27/plus-de-4-milliards-d-utilisateurs-des-reseaux-sociaux-dans-le-monde.php"> Plus de 4 milliards d’utilisateurs des réseaux sociaux dans le monde</a>
+                
+                    
+                </li>
+                <li>Pierre Trudel. (6 décembre 2016). Faussetés et vérités sur les réseaux sociaux <a em href="https://www.ledevoir.com/opinion/chroniques/486388/faussetes-et-verites-sur-les-reseaux-sociaux">Faussetés et vérités sur les réseaux sociaux</a> </li>
+                <div class="content">
+                    <h2 strong  align="center">Renseignements utiles!</h2>
+            
+                    <div class="pure-g">
+                        <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+                            <form class="pure-form pure-form-stacked">
+                                <fieldset>
+            
+                                    <label for="name">Nom</label>
+                                    <input id="name" type="text" placeholder="Votre nom">
+            
+            
+                                    <label for="email">Courriel</label>
+                                    <input id="email" type="email"
+                                    placeholder="Votre courriel">
+            
+                                    <label for="password">Mot de passe</label>
+                                    <input id="password" type="password"
+                                    placeholder="Votre mot de passe">
+            
+                                    <button type="submit" class="pure-button">S'inscrire!</button>
+                                    <script>
+                                        function infoBoutton() {
+                                        let prenom = prompt("quel est votre prénom?");
+                                        let nom = prompt("quel est votre nom?");
+                                        alert("merci" + prenon + ", nous te contacterons bientot");
+                                    }
+                                      
+                
+                                        
+                                        
+                                        let cliqueMoi = document.querySelector("button");
+                                        cliqueMoi.addEventListener("click", infoBoutton);
+                                    
+                                        </script>
+                                        
+                                </fieldset>
+                            </form>
+                        </div>
+            
+                        <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+                            <h4><em>Contact</em></h4>
+                            <p>
+                               
+                                Pour avoir ample information concernant le cours d'écritures numériques ,veuillez contacter Madame Candice  via son adresse mail<a href="mailto:candice.dan@uontario.ca">candice.dan@uontario.ca</a>
+                            </p>
+            
+                            <h4><em>Plus d'informations</em></h4>
+                            <p>
+                                Pour toute personne désireuse d'en apprendre d'avantage sur le programme des cultures numériques vous pouvez vous diriger sur le site de <a href="https://uontario.ca/"> l'université de l'Ontario de francais</a>.Une capsule faite par la responsable de pôle Madame Héla est également disponible sur youtube.<a href="https://www.youtube.com/watch?v=2DJfJyO0EnQ"> cliquez ici </a> ,pour regarder la capsule.
+                            </p>
+                        </div>
+                    </div>
+            
+                </div>
+            
+                <div class="footer l-box is-center">
+                   
+                </div>
+            
+            </div>
+            
+            </body>
+
+                
+                          
+
+                        
+
+
+
+
